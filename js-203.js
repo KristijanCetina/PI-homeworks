@@ -3,7 +3,7 @@ let char = "# "; //must contain one empty space after char
 let firstRowString = "";
 
 if (boardSize > 1) {
-    for (let i = 0; i < boardSize; i++) {
+    for (let i = 0; i < boardSize/2; i++) {
         firstRowString += char;
     }
 
