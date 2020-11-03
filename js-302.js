@@ -14,4 +14,4 @@ function isti_znakovi(ulazniString) {
 
 }
 
-console.log(isti_znakovi("abbccc"));
+console.log(isti_znakovi("aaabbcccc"));

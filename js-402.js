@@ -58,7 +58,7 @@ let student = [{
  * @param {boolean} status status upisa studenta
  */
 function provjeri(lista, pojam, status) {
-    found = false;
+    let found = false;
     for (const atribut in student) {
         // za ovo sigurno postoji neki elegantniji nacin
         if ((lista[atribut].prezime.toLowerCase().includes(pojam.toLowerCase()) ||

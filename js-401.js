@@ -51,7 +51,7 @@ let student = [{
 ];
 
 function provjeri(lista, pojam) {
-    found = false;
+    let found = false;
     for (const atribut in student) {
         if ((lista[atribut].prezime === pojam || lista[atribut].ime === pojam) && lista[atribut].upisan === true)
             found = true;
