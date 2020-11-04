@@ -56,3 +56,20 @@ console.log("");
 for (osoba of osobe) {
     console.log(osoba.ime);
 }
+console.log("");
+
+const array1 = [...Array(5).keys()];
+console.log(array1);
+console.log(array1.map(x => x ** 3));
+console.log("");
+
+const array2 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator * currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array2.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array2.reduce(reducer, 5));
+// expected output: 15
