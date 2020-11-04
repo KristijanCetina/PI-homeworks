@@ -25,7 +25,7 @@ arr.forEach(element => {
     console.log(element);
 });
 
-myObject = [{
+osobe = [{
         ime: "Pero0",
         prezime: "Peric0",
         godiste: 1945
@@ -42,17 +42,17 @@ myObject = [{
     }
 ];
 
-myObject.forEach(element => {
-    console.log(element.ime);
+osobe.forEach(osoba => {
+    console.log(osoba.ime);
 });
 console.log("");
 
-for (t in myObject) {
+for (t in osobe) {
     console.log(t);
-    console.log(myObject[t].ime);
+    console.log(osobe[t].ime);
 }
 console.log("");
 
-for (x of myObject) {
-    console.log(x.ime);
+for (osoba of osobe) {
+    console.log(osoba.ime);
 }
