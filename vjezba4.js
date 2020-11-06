@@ -59,12 +59,14 @@ for (osoba of osobe) {
 console.log("");
 
 const array1 = [...Array(5).keys()];
+//array1.shift(); // miće i vraća prvi element
+array1.splice(0, 1); // briše jedan element od mjesta 0
 console.log(array1);
 console.log(array1.map(x => x ** 3));
 console.log("");
 
 const array2 = [1, 2, 3, 4];
-const reducer = (accumulator, currentValue) => accumulator * currentValue;
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 // 1 + 2 + 3 + 4
 console.log(array2.reduce(reducer));
