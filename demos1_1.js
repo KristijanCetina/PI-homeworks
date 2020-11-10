@@ -1,4 +1,4 @@
-input = {
+const input = {
     "prvi": 122,
     "drugi": 18,
     "treci": "NotAnInteger",
@@ -12,7 +12,7 @@ console.log(sumaIntElemenata(input))
 function sumaIntElemenata(input) {
     let sumaIntElemenata = 0;
     for (n in input) {
-        if (!(isNaN(input[n]))) {
+        if (!isNaN(input[n])) {
             sumaIntElemenata += input[n];
         }
     }
